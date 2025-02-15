@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  
+  body{
+    background-color: #f2f2f2;
+  }
+  
+  /* header */
+  
+  .triangle-border {
+    position: relative;
+    display: inline-block; /* Adjust layout if necessary */
+    padding: 10px; /* Add spacing around the image */
+    border-right: 2px solid #884491; /* Placeholder for alignment */
+    border-top: 2px solid #884491; /* Placeholder for alignment */
+    border-radius: 0px 35px 0px 0px;
+  }
+  
+  /* baner */
+  .bg-baner-index {
+    background-image: url("../images/whychooseushero.png");
+    width: 100%;
+    height: 660px;
+  }
+  
+
+
+
+
+
+  /* card section */
+.bg-card {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.bg-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top center;
+  background: #853d8d;
+  z-index: -1;
+  transition: transform 0.5s;
+}
+
+.bg-card:hover::after {
+  transform: scaleY(1);
+}
+
+.bg-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bg-card h3 {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #1c2434;
+  /* #2f94d2   you can try this also */
+}
+.bg-card .svg-color path {
+  fill: #853d8d; /* Apply desired color */
+  transition: fill 0.3s ease; /* Ensure smooth transition */
+}
+
+.bg-card:hover .svg-color path {
+  fill: white; /* Apply desired color */
+}
+
+.bg-card:hover h3 {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.bg-card p , .bg-card a{
+  font-size: 14px;
+  color: #6b7280;
+  /* #2f94d2   you can try this also */
+  line-height: 1.6;
+}
+
+.bg-card:hover p ,.bg-card a {
+  font-size: 14px;
+  color: white;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+  
+
+.last-section{
+  background-image: url('../images/last-section.png');
+}

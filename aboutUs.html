@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podar Education - Excellence in Education</title>
+
+    <!-- Favicon (Tab Logo) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./CSS/aboutus.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT FAMILY LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- SLIDER CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header
+        class='flex shadow-[0px_0px_16px_rgba(17,_17,_26,_0.1)] py-4 px-4 sm:px-6 bg-white font-sans min-h-[70px] tracking-wide relative z-50'>
+        <div class='flex flex-wrap items-center justify-between gap-4 w-full max-w-screen-xl mx-auto'>
+            <a href="./index.html" class="max-sm:hidden triangle-border">
+                <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+            </a>
+            <a href="./index.html" class="hidden max-sm:block triangle-border">
+                <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+            </a>
+
+            <div id="collapseMenu"
+                class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+                <button id="toggleClose"
+                    class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
+                        viewBox="0 0 320.591 320.591">
+                        <path
+                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                            data-original="#000000"></path>
+                        <path
+                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                            data-original="#000000"></path>
+                    </svg>
+                </button>
+
+                <ul
+                    class='lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+                    <li class='mb-6 hidden max-lg:block'>
+                        <a href="" class="triangle-border"><img src="./images/podar-logo-3x-removebg-preview 1.png"
+                                alt="logo" class='w-36' />
+                        </a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'>
+                        <a href='./index.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Home</a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./aboutUs.html'
+                            class='hover:text-[#843d8d] text-[#843d8d] font-bold block text-base'>About us</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./why-choose-us.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Why Choose Us</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./Admmision.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Admissions</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./blogs.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Blogs</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./contact.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Contact Us</a></li>
+                    <!-- Enquire Button -->
+                    <li class='mt-4 lg:hidden'>
+                        <button type="button"
+                            class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2 w-full">
+                            Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class='flex items-center max-lg:ml-auto space-x-4'>
+                <button type="button"
+                    class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2 lg:block hidden">
+                    Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <button id="toggleOpen" class='lg:hidden'>
+                    <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- header-end -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="bg-baner-index">
+            <div class="container flex items-center h-full">
+                <div>
+                    <div class="flex items-center">
+                        <h1
+                            class="font-inter text-[30px] md:text-[50px] lg:text-[70px] font-bold leading-[80px] tracking-[-0.01em] text-white break-words relative">
+                            About Us
+                            <img src="./images/Group.png" alt="flower"
+                                class="w-[14px] h-[14px] md:w-[24px] md:h-[24px] object-contain inline-block">
+                        </h1>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END HERO SECTION  -->
+
+        <!-- First Section  -->
+        <section>
+            <div class="container grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20">
+                <div class="w-full flex justify-center">
+                    <!-- Show this image on larger screens -->
+                    <img src="./images/aboutmainimage.png" alt="About Podar Education Network"
+                        class="w-full max-w-lg object-cover rounded-lg shadow-lg hidden md:block">
+                    <!-- Show this image on smaller screens -->
+                    <img src="./images/responsiveaboutimage.png" alt="About Podar Education Network"
+                        class="w-full max-w-lg object-cover rounded-lg shadow-lg block md:hidden">
+                </div>
+                <!-- End Left Side: Images -->
+                <!-- Right Side: Text Content -->
+                <div class="w-full">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center md:text-left">About Podar Education
+                        NetWork</h2>
+                    <p class="text-gray-600 mb-6 text-justify md:text-lef">
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. sed quia non numquam eius
+                        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        <br /><br />
+                        voluptatem sequi nesciunt. sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                        magnam aliquam quaerat voluptatem.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2  text-gray-700">
+                            <svg class="w-5 h-5  text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Preparation For Competitions
+                        </li>
+                        <li class="flex items-center gap-2  text-gray-700">
+                            <svg class="w-5 h-5  text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Dance Testing
+                        </li>
+                        <li class="flex items-center gap-2  text-gray-700">
+                            <svg class="w-5 h-5  text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            online Supported
+                        </li>
+                        <li class="flex items-center gap-2  text-gray-700">
+                            <svg class="w-5 h-5  text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Upskill your Organization.
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Right Side: Text Content -->
+            </div>
+        </section>
+        <!-- End First Section  -->
+
+        <!-- Second Section -->
+        <section>
+            <div class="container mx-auto px-4 flex flex-wrap justify-center gap-8 py-10">
+                <!-- Our Mission Section -->
+                <div class="bg-gradient-to-r from-white to-fuchsia-600 p-1 rounded-lg w-full lg:w-[48%]">
+                    <div class="w-full text-gray-200 bg-[#cddef3] rounded-lg">
+                        <div class="flex items-center py-5 px-6">
+                            <div class="pr-4">
+                                <img src="images/eyeimage.png" class="w-14 h-14"
+                                    alt="Eye icon representing vision or mission">
+                            </div>
+                            <h2 class="text-[#9B62A2] font-bold text-2xl sm:text-4xl">Our Mission</h2>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed px-6 pb-6">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. sed quia non numquam
+                            eius
+                            modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Our Vision Section -->
+                <div class="bg-gradient-to-r from-white to-fuchsia-600 p-1 rounded-lg w-full lg:w-[48%]">
+                    <div class="w-full text-gray-200 bg-[#cddef3] rounded-lg">
+                        <div class="flex items-center py-5 px-6">
+                            <div class="pr-4">
+                                <img src="images/visionimage.png" class="w-14 h-14"
+                                    alt="Target icon representing vision">
+                            </div>
+                            <h2 class="text-[#9B62A2] font-bold text-2xl sm:text-4xl">Our Vision</h2>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed px-6 pb-6">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. sed quia non numquam
+                            eius
+                            modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End class Section -->
+
+        <!-- Third Section  -->
+        <section>
+            <div class="container mx-auto px-6 py-12">
+                <div class="flex items-center justify-center mb-6">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mr-2 text-gray-80">About Podar Education Net
+                        work</h2>
+                    <div class="mt-1.5">
+                        <img src="images/flower-2.png" alt="" class="w-4 h-4 md:w-6 md:h-6">
+                    </div>
+                </div>
+
+                <img src="images/Rectangle 5785.png" alt="Classroom"
+                    class="rounded-md w-[10px]] max-w-full h-auto shadow-md mb-6 object-cover object-center">
+
+
+                <p class="text-gray-400 text-sm mb-4">
+                    Established in 1927, by Sheth Anandilal Podar, Podar Education Network has, from the very beginning
+                    been focused driven and motivated by the traditional Indian values of honesty, integrity and
+                    service. The father of our nation, Mahatma Gandhi, being the very first President of the Anandilal
+                    Podar Trust stands testimony to this fact.
+                    <br>
+                    <br>
+                    With over 96 years of experience within the educational space, Podar Education Network is now a
+                    network of 144 Podar International Schools (completely managed by Podar Education Network) and 96
+                    Podar Partner schools, with a combined annual student strength of more.
+                    <br>
+                    <br>
+                    ur constantly growing network of education institutions includes a wide spectrum of Pre-Primary
+                    schools under the name Podar Prep, Primary and Secondary schools under the name Podar International
+                    School, Partner Schools under the brand name Podar Learn School, Colleges offering International
+                    Undergraduate and Graduate degrees, Part-Time courses and Teacher Training Institutes.
+                    <br>
+                    <br>
+                    Established in 1927, by Sheth Anandilal Podar, Podar Education Network has, from the very beginning
+                    been focused driven and motivated by the traditional Indian values of honesty, integrity and
+                    service. The father of our nation, Mahatma Gandhi, being the very first President of the Anandilal
+                    Podar Trust stands testimony to this fact.
+                </p>
+            </div>
+        </section>
+        <!-- End Third Section -->
+
+        <!-- Fourth Section -->
+        <section>
+            <div
+                class="container mx-auto px-4 2xl:py-[50px] xl:py-[50px] lg:py-[50px] md:py-[50px] py-[25px] relative ">
+                <div class=" grid md:grid-cols-2 gap-8 items-center ">
+                    <!-- left Image -->
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <img src="./images/Rectangle 5784.png" alt="Various spices in silver spoons"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <!-- Right Content -->
+                    <div
+                        class="absolute bg-gray-50 left-[45%] p-4 rounded-[8px] z-10 shadow-lg 2xl:block xl:block lg:block hidden overflow-hidden md:p-10">
+                        <div class="flex align-center">
+                            <h2 class="text-2xl 2xl:text-5xl lg:text-4xl xl:text-3xl text-gray-700 font-bold pb-3 pr-6">
+                                Chairman’s Message
+                            </h2>
+                            <img src="images/Frame.png" alt="" class="inline-block w-10 h-8">
+                        </div>
+                        <div class="space-y-6">
+                            <!-- Feature Items -->
+                            <div class="flex items-start gap-3">
+                                <p class="text-gray-400 Outfit">
+                                    Our scholastic record, innovative learning methods and a strong commitment to
+                                    delivering quality through integrity have helped us scale new heights in the field
+                                    of edu
+                                    The aim of all our schools is not just to impart knowledge but to foster the growth
+                                    of responsible, well-rounded, and lifelong learners who can contribute positively to
+                                    society.
+                                    As a result, Podar today is a trusted name and an acknowledged leader in the
+                                    collective effort to shape the future of our children and the nation through its
+                                    wide network of
+                                    We welcome you to join the Podar family and to give your child the best when it
+                                    comes to an integrated, holistic and empowering learning experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile view  -->
+                    <div
+                        class="space-y-5 bg-white p-4 rounded-[8px] z-10 shadow-lg mt-[-100px] m-3 2xl:hidden xl:hidden lg:hidden block">
+                        <div class="flex align-center">
+                            <h2 class="text-3xl 2xl:text-5xl lg:text-5xl xl:text-4xl font-bold -mb-4">
+                                Chairman’s Message
+                                <img src="images/Frame.png" alt="" class="inline-block w-12 h-10">
+                            </h2>
+                        </div>
+
+                        <div class="space-y-0">
+                            <!-- Feature Items -->
+                            <div class="flex items-start gap-3">
+                                <p class="text-gray-400 Outfit">
+                                    Our scholastic record, innovative learning methods and a strong commitment to
+                                    delivering quality through integrity have helped us scale new heights in the field
+                                    of edu
+                                    The aim of all our schools is not just to impart knowledge but to foster the growth
+                                    of responsible, well-rounded, and lifelong learners who can contribute positively to
+                                    society.
+                                    As a result, Podar today is a trusted name and an acknowledged leader in the
+                                    collective effort to shape the future of our children and the nation through its
+                                    wide network of
+                                    We welcome you to join the Podar family and to give your child the best when it
+                                    comes to an integrated, holistic and empowering learning experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Fourth Section -->
+
+        <section>
+            <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-6">
+                <img src="./images/Group 1116601971.png" alt="">
+                </div>
+        </section>
+
+        <!-- Fifth Section -->
+        <section>
+            <div class="container mx-auto py-10">
+                <div class="">
+                    <div class="flex pt-4 pb-8 items-center justify-center">
+                        <h4
+                            class="font-inter text-wrap text-[25px] md:text-[35px] lg:text-[43px] font-bold leading-[32px] sm:leading-[38px] md:leading-[40px] lg:leading-[50px] text-center sm:text-left text-[#3D3D3D]">
+                            Podar Initiative
+                        </h4>
+                        <img src="./images/flower-2.png" alt="flower"
+                            class="w-[22px] h-[22px] object-contain mx-3 inline-block">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div
+                            class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif]">
+                            <div class="p-4">
+                                <img src="./images/our-school-1.png" class="w-full" alt="Card Image" />
+                            </div>
+                            <div class="px-4 pb-5">
+                                <h3 class="text-gray-800 text-xl font-bold">Podar international School</h3>
+                                <p class="mt-2 text-sm text-gray-500 leading-relaxed mb-5">
+                                    Nemo enim ipsam see voluptatem quia voluptas sit Nemo enim ipsam see we avoluptatem
+                                    quia voluptas twill becomquia consequuntur.
+                                </p>
+                                <button type="button"
+                                    class="text-gray-500 px-6 py-3 sm:px-4 sm:py-2 rounded border border-gray-400 border-1 text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                                    Read More <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif]">
+                            <div class="p-4">
+                                <img src="./images/our-school-1.png" class="w-full" alt="Card Image" />
+                            </div>
+                            <div class="px-4 pb-5">
+                                <h3 class="text-gray-800 text-xl font-bold">Podar international School</h3>
+                                <p class="mt-2 text-sm text-gray-500 leading-relaxed mb-5">
+                                    Nemo enim ipsam see voluptatem quia voluptas sit Nemo enim ipsam see we avoluptatem
+                                    quia voluptas twill becomquia consequuntur.
+                                </p>
+                                <button type="button"
+                                    class="text-gray-500 px-6 py-3 sm:px-4 sm:py-2 rounded border border-gray-400 border-1 text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                                    Read More <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] hidden md:block">
+                            <div class="p-4">
+                                <img src="./images/our-school-1.png" class="w-full" alt="Card Image" />
+                            </div>
+                            <div class="px-4 pb-5">
+                                <h3 class="text-gray-800 text-xl font-bold">Podar international School</h3>
+                                <p class="mt-2 text-sm text-gray-500 leading-relaxed mb-5">
+                                    Nemo enim ipsam see voluptatem quia voluptas sit Nemo enim ipsam see we avoluptatem
+                                    quia voluptas twill becomquia consequuntur.
+                                </p>
+                                <button type="button"
+                                    class="text-gray-500 px-6 py-3 sm:px-4 sm:py-2 rounded border border-gray-400 border-1 text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                                    Read More <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center mt-8">
+                        <button type="button"
+                            class="px-6 py-3 sm:px-4 sm:py-2 rounded bg-[#0c54a0] text-white text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                            Load More <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Fifth Section -->
+
+        <!-- Sixth Section  -->
+        <section>
+            <div class="container mx-auto px-6 py-12">
+                <div class="flex items-center justify-center mb-6">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mr-2 text-gray-80">Poder School Song</h2>
+                    <div class="mt-1.5">
+                        <img src="images/flower-2.png" alt="" class="w-4 h-4 md:w-6 md:h-6">
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="relative text-white rounded-md shadow-lg overflow-hidden">
+                    <img src="images/prayerimage.png" alt="Classroom"
+                        class="w-full h-[200px] md:h-[400px] lg:h-[500px] bg-cover bg-center opacity-50">
+                    <!-- Button with Image and Text -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-2 md:p-4 text-center">
+                        <button
+                            class="flex items-center gap-2 bg-blue-800 text-white p-2 border-[15px] border-white rounded-full text-lg font-semibold shadow-md">
+                            <svg class="w-4 h-4 md:w-8 md:h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </button>
+                        <p
+                            class="text-white text-sm md:text-base lg:text-lg mt-6 leading-relaxed w-11/12 2xl:block xl:block lg:block md:block hidden">
+                            Nemo enim ipsam see voluptatem quia voluptas sit Nemo enim ipsam see we avoluptatem quia
+                            fugit, sed twill becomquia consequuntur.Nemo enim ipsam see voluptatem quia voluptas sit
+                            Nemo enim ipsam see we avoluptatem quia fugit, sed twill becomquia consequuntur.
+                        </p>
+                        <p
+                            class="text-white text-sm md:text-base lg:text-lg m-3 leading-relaxed max-w-3xl px-2 2xl:hidden xl:hidden lg:hidden md:hidden block">
+                            Nemo enim ipsam see voluptatem quia voluptas sit Nemo enim ipsam see we avoluptatem quia
+                            fugit, sed twill becomquia consequuntur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Sixth Section -->
+
+        <!-- Seventh Section -->
+        <section>
+            <div class="container mx-auto md:px-6 py-6 md:py-20">
+                <div class="flex items-center justify-center mb-3 md:mb-6">
+                    <h2 class="text-4xl font-bold mr-2 text-gray-80">Social Outreach</h2>
+                    <div class="mt-1.5">
+                        <img src="./images/flower-2.png" alt="" class="w-4 h-4 md:w-6 md:h-6">
+                    </div>
+                </div>
+                <!-- Gallery for Large Screens -->
+                <div class="grid grid-cols-3 gap-4 pt-6 hidden 2xl:grid xl:grid lg:grid md:grid">
+                    <div class="grid gap-4">
+                        <div>
+                            <img class="h-auto max-w-full object-cover object-center" src="./images/Rectangle 19332.png"
+                                alt="gallery-photo" />
+                        </div>
+                        <div class="">
+                            <img class="h-auto max-w-full rounded-xl object-cover object-center "
+                                src="./images/Rectangle 19333.png" alt="gallery-photo" />
+                        </div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div class="">
+                            <img class="h-auto max-w-full rounded-xl object-cover object-center"
+                                src="./images/Rectangle 19336.png" alt="gallery-photo" />
+                        </div>
+                        <div class="">
+                            <img class="h-auto max-w-full rounded-xl object-cover object-center"
+                                src="./images/Rectangle 19337.png" alt="gallery-photo" />
+                        </div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div class="">
+                            <img class="h-auto max-w-full rounded-xl object-cover object-center"
+                                src="./images/Rectangle 19341.png" alt="gallery-photo" />
+                        </div>
+                        <div class="">
+                            <img class="h-auto max-w-full rounded-xl object-cover object-center "
+                                src="./images/Rectangle 19340.png" alt="gallery-photo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 pt-6 block 2xl:hidden xl:hidden lg:hidden md:hidden">
+                    <div class="grid gap-4">
+                        <div class="aspect-square border-[12px] border-white rounded-xl overflow-hidden">
+                            <img src="./images/Rectangle 19336.png" alt="Community service activity 1" fill
+                                class="object-cover " />
+                        </div>
+
+                        <div class="aspect-square border-[12px] border-white rounded-xl overflow-hidden">
+                            <img src="./images/Rectangle 19337.png" alt="Community service activity 2" fill
+                                class="object-cover object-center w-full h-full" />
+                        </div>
+
+                    </div>
+                    <div class="grid gap-4">
+                        <div class="aspect-square border-[12px] border-white rounded-xl overflow-hidden">
+                            <img src="./images/Rectangle 19333.png" alt="Community service activity 3" fill
+                                class="object-cover " />
+                        </div>
+
+                        <div class="aspect-square border-[12px] border-white rounded-xl overflow-hidden">
+                            <img src="./images/Rectangle 19340.png" alt="Community service activity 4" fill
+                                class="object-cover " />
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-8 block 2xl:hidden xl:hidden lg:hidden md:hidden">
+                    <button type="button"
+                        class="px-6 py-3 sm:px-4 sm:py-2 rounded bg-[#0c54a0] text-white text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                        Load More <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- End Seventh Section -->
+
+        <!-- Quick Links end-->
+        <footer class="footer bg-[#0c54a0] text-white py-6 flex flex-col items-center relative">
+            <!-- Background Image -->
+            <div class="bg-img w-full h-full absolute top-[-19px] left-0 z-0 hidden md:block">
+                <img src="./images/footer-img/footer-bg.png" alt="Footer Background" class="w-full h-full ">
+            </div>
+            <!-- Background Image Responsive -->
+            <div class="bg-img w-full h-full absolute top-0 left-0 z-0 md:hidden block">
+                <img src="./images/footer-img/footer-bg-res.png" alt="Footer Background" class="w-full h-full">
+            </div>
+
+            <!-- Container -->
+
+            <div class="md:container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6 z-10 py-6">
+                <!-- Logo Section -->
+                <div class="flex flex-col items-center justify-center space-y-4 md:col-span-1 col-span-4">
+                    <img src="./images/footer-img/footer-logo.png" alt="Podar Logo" class="w-32 md:w-40">
+                    <!-- <p class="text-sm text-center md:text-left">Since 1927</p> -->
+                </div>
+
+                <!-- Quick Links 1 (on medium screens, it will be on the left) -->
+                <div class="space-y-4 md:col-span-1 col-span-2">
+                    <h3 class="font-semibold text-lg md:text-xl">Quick Links</h3>
+                    <ul class="space-y-2 text-sm md:text-base">
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Why Podar</a></li>
+                        <li><a href="#" class="hover:underline">Download Brochure</a></li>
+                        <li><a href="#" class="hover:underline">Transport Policy</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links 2 (on medium screens, it will be on the right) -->
+                <div class="space-y-4 md:col-span-1 col-span-2">
+                    <h3 class="font-semibold text-lg md:text-xl">Quick Links</h3>
+                    <ul class="space-y-2 text-sm md:text-base">
+                        <li><a href="#" class="hover:underline">Admissions</a></li>
+                        <li><a href="#" class="hover:underline">Locations</a></li>
+                        <li><a href="#" class="hover:underline">FAQs</a></li>
+                        <li><a href="#" class="hover:underline">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section (on medium screens, will take full width) -->
+                <div class="space-y-4 md:col-span-1 col-span-4">
+                    <h3 class="font-semibold text-lg md:text-xl">Keep in Touch</h3>
+                    <ul class="space-y-2 text-sm md:text-base">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            85, Podar Centre, Chamarbaug Post Office Lane, Dr. Ambedkar Road, Parel, Mumbai-400042,
+                            Maharashtra, India
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            Admissions@podar.org
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <a href="tel:02243330000" class="hover:underline">022 43330000</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="flex md:space-x-6 space-x-2 mt-8 md:mt-0 z-10">
+                <a href="#"
+                    class="bg-white text-black hover:text-blue-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                    aria-label="Facebook">
+                    <i class="fab fa-facebook-f text-lg md:text-xl"></i>
+                </a>
+                <a href="#"
+                    class="bg-white text-black hover:text-pink-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram text-lg md:text-xl"></i>
+                </a>
+                <a href="#"
+                    class="bg-white text-black hover:text-blue-400 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                    aria-label="Twitter">
+                    <i class="fab fa-twitter text-lg md:text-xl"></i>
+                </a>
+                <a href="#"
+                    class="bg-white text-black hover:text-red-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                    aria-label="YouTube">
+                    <i class="fab fa-youtube text-lg md:text-xl"></i>
+                </a>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="flex mt-4 z-10">
+                <p class="text-sm text-center w-full p-2">Copyright 2022 | Privacy Policy | Terms & Conditions</p>
+            </div>
+
+        </footer>
+        <!-- Header-end -->
+
+
+        <!-- LINK SCRIPT SRC  -->
+
+    </main>
+    <!-- SCRIPT -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const swiper = new Swiper('.blog-slider', {
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                    },
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-doc',
+                    prevEl: '.swiper-button-prev-doc',
+                },
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const swiper = new Swiper('.Admissions', {
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-doc',
+                    prevEl: '.swiper-button-prev-doc',
+                },
+            });
+        });
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        padding: {
+                            DEFAULT: "1rem",
+                            sm: "2rem",
+                            lg: "4rem",
+                            xl: "5rem",
+                            "2xl": "6rem",
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['"Josefin Sans"', "sans-serif"],
+                        josefin: ['"Josefin Sans"', "sans-serif"],
+                        antonio: ['"Antonio Fischer"', "cursive"],
+                        italiana: ['"Italiana"', "serif"],
+                        londrina: ['"Londrina Sketch"', 'cursive'],
+                    },
+                    backgroundImage: {
+                        "gradient-border":
+                            "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1D71B8 100%)",
+                    },
+                },
+            },
+        };
+    </script>
+
+</body>
+
+</html>

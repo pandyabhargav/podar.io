@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./CSS/whychooseus.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <!-- LINK SLICK CSS  -->
+    <link rel="stylesheet" href="./CSS/slick.css">
+    <!-- FONT AWESOME LINK  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT FAMILY LINK  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font jost + inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- SLIDER CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header
+        class='flex shadow-[0px_0px_16px_rgba(17,_17,_26,_0.1)] py-4 px-4 sm:px-6 bg-white font-sans min-h-[70px] tracking-wide relative z-50'>
+        <div class='flex flex-wrap items-center justify-between gap-4 w-full max-w-screen-xl mx-auto'>
+            <a href="./index.html" class="max-sm:hidden triangle-border">
+                <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+            </a>
+            <a href="./index.html" class="hidden max-sm:block triangle-border">
+                <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+            </a>
+
+
+            <div id="collapseMenu"
+                class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+                <button id="toggleClose"
+                    class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
+                        viewBox="0 0 320.591 320.591">
+                        <path
+                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                            data-original="#000000"></path>
+                        <path
+                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                            data-original="#000000"></path>
+                    </svg>
+                </button>
+
+                <ul
+                    class='lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+                    <li class='mb-6 hidden max-lg:block'>
+                        <a href="" class="triangle-border"><img
+                                src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+                        </a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'>
+                        <a href='./index.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Home</a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./aboutUs.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>About us </a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./why-choose-us.html'
+                            class='hover:text-[#843d8d] text-[#843d8d] font-bold block text-base'>Why Choose Us </a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./Admmision.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Admissions </a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./blogs.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Blogs</a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./contact.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class='flex items-center max-lg:ml-auto space-x-4'>
+                <button type="button"
+                    class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        class="cursor-pointer fill-white inline w-4 h-4">
+                        <circle cx="10" cy="7" r="6" data-original="#000000" />
+                        <path
+                            d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z"
+                            data-original="#000000" />
+                    </svg>
+                    Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <button id="toggleOpen" class='lg:hidden'>
+                    <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- HERO SECTION -->
+    <section class="bg-baner-index">
+        <div class="container flex items-center h-full">
+            <div>
+                <div>
+                    <h1
+                        class="font-inter text-[30px] md:text-[50px] lg:text-[70px] font-bold leading-[80px] tracking-[-0.01em] text-white break-words relative">
+                        Why Choose Us
+                        <img src="./images/Group.png" alt="flower"
+                            class="w-[24px] h-[24px] object-contain mx-3 absolute top-[-15px] left-[200px] md:left-[300px] lg:left-[500px]">
+                    </h1>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HERO SECTION  -->
+
+    <!-- WHY CHOOSE US SECTION  -->
+    <section class="main-section py-20 bg-[#f9f7f7]">
+        <div class="max-w-[1440px] mx-auto bg-white">
+            <div class="flex justify-center gap-x-8  flex-wrap py-4 mx-auto text-center">
+                <button
+                    class="tab active whitespace-nowrap px-6 py-3 rounded-lg text-[22px] font-bold transition-colors bg-[#0C54A0] text-white hover:bg-blue-800">
+                    The Right Curriculum
+                </button>
+                <button
+                    class="tab whitespace-nowrap px-6 py-3 rounded-lg text-[22px] font-bold transition-colors bg-white text-gray-500 hover:bg-blue-50 hover:text-blue-700">
+                    The Right Faculty
+                </button>
+                <button
+                    class="tab whitespace-nowrap px-6 py-3 rounded-lg text-[22px] font-bold transition-colors bg-white text-gray-500 hover:bg-blue-50 hover:text-blue-700">
+                    The Right Environment
+                </button>
+                <button
+                    class="tab whitespace-nowrap px-6 py-3 rounded-lg text-[22px] font-bold transition-colors bg-white text-gray-500 hover:bg-blue-50 hover:text-blue-700">
+                    The Right Approach
+                </button>
+                <button
+                    class="tab whitespace-nowrap px-6 py-3 rounded-lg text-[22px] font-bold transition-colors bg-white text-gray-500 hover:bg-blue-50 hover:text-blue-700">
+                    The Right Skills
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- END WHY CHOOSE US SECTION  -->
+
+    <!-- WHY CHOOSE US CONTENT  -->
+    <section class="bg-[#f9f7f7]">
+        <div
+            class="max-w-[1440px] mx-auto px-4 2xl:py-[50px] xl:py-[50px] lg:py-[50px] md:py-[50px] py-[25px] relative ">
+            <div class="flex flex-col gap-20">
+                <div class="grid md:grid-cols-2 gap-8 items-center ">
+                    <!-- left Image -->
+                    <div class="relative md:h-[400px] h-[222px] rounded-2xl overflow-hidden margin-top">
+                        <img src="./images/whychooseust1.png" alt="Various spices in silver spoons"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <!-- Right Content -->
+                    <div
+                        class="absolute bg-white left-[39%] p-8 rounded-[8px] xl:w-[840px] lg:w-[650px] md:w-[500px] w-[380px] z-10 shadow-lg 2xl:block xl:block lg:block md:block hidden  overflow-hidden px-16 py-10">
+                        <h2 class="text-3xl 2xl:text-[50px] text-[#3D3D3D] font-bold PlayfairDisplay pb-5">
+                            Student's Journey
+                        </h2>
+                        <div class="space-y-6">
+                            <!-- Feature Items -->
+                            <div class="flex items-start gap-3">
+                                <p class="text-[#9B9999] text-lg Outfit">As every child learns at their own pace, Podar
+                                    Innovation
+                                    Center provides resources that aid school teachers in providing additional support
+                                    for
+                                    students who require remediation. Using productive worksheets on Literacy and
+                                    Numeracy,
+                                    we aim to strengthen each child’s core academic skills and assist students in
+                                    accomplishing expected proficiency in school.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Mobile view  -->
+                    <div
+                        class="space-y-5 bg-white p-4 rounded-[8px] z-10 shadow-lg mt-[-100px] m-3 2xl:hidden xl:hidden lg:hidden md:hidden block">
+                        <h2 class="text-3xl 2xl:text-5xl xl:text-5xl lg:text-5xl font-bold PlayfairDisplay pb-0">
+                            Student's Journey
+                        </h2>
+                        <div class="space-y-0">
+                            <!-- Feature Items -->
+                            <div class="flex items-start gap-3">
+                                <p class="text-gray-400 Outfit">As every child learns at their own pace, Podar
+                                    Innovation
+                                    Center provides resources that aid school teachers in providing additional support
+                                    for
+                                    students who require remediation. Using productive worksheets on Literacy and
+                                    Numeracy,
+                                    we aim to strengthen each child’s core academic skills and assist students in
+                                    accomplishing expected proficiency in school.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center relative">
+                    <!-- Left Content -->
+                    <div
+                        class="absolute bg-white right-[39%] p-8 rounded-[8px] xl:w-[840px] lg:w-[650px] md:w-[500px] w-[380px] z-10 shadow-lg 2xl:block xl:block lg:block md:block hidden overflow-hidden px-16 py-10">
+                        <h2 class="text-3xl 2xl:text-[50px] text-[#3D3D3D] font-bold PlayfairDisplay pb-5">
+                            Spell The Beans
+                        </h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-3">
+                                <p class="text-[#9B9999] text-lg Outfit">
+                                    While spellings form an integral part of Languages and other subjects, learning
+                                    spellings can be a dull activity for learners. Keeping this in mind, Podar
+                                    Innovation Center introduces the ‘Spell the Beans’ programme, targeting students
+                                    from Grade III to Grade IX, which incorporates fun & engaging activities into the
+                                    curriculum to help retain spellings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Image -->
+                    <div class="relative md:h-[400px] h-[222px] rounded-2xl overflow-hidden margin-top md:col-start-2">
+                        <img src="./images/whychooset2.png" alt="Students raising hands in classroom"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <!-- Mobile view -->
+                    <div
+                        class="space-y-5 bg-white p-4 rounded-[8px] z-10 shadow-lg mt-[-100px] m-3 2xl:hidden xl:hidden lg:hidden md:hidden block">
+                        <h2 class="text-3xl 2xl:text-5xl xl:text-5xl lg:text-5xl font-bold PlayfairDisplay pb-0">
+                            Spell The Beans
+                        </h2>
+                        <div class="space-y-0">
+                            <div class="flex items-start gap-3">
+                                <p class="text-gray-400 Outfit">
+                                    While spellings form an integral part of Languages and other subjects, learning
+                                    spellings can be a dull activity for learners. Keeping this in mind, Podar
+                                    Innovation Center introduces the ‘Spell the Beans’ programme, targeting students
+                                    from Grade III to Grade IX, which incorporates fun & engaging activities into the
+                                    curriculum to help retain spellings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" grid md:grid-cols-2 gap-8 items-center ">
+                    <!-- left Image -->
+                    <div class="relative md:h-[400px] h-[222px] rounded-2xl overflow-hidden margin-top">
+                        <img src="./images/whychoose3.png" alt="Various spices in silver spoons"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <!-- Right Content -->
+                    <div
+                        class="absolute bg-white left-[39%] p-8 rounded-[8px] xl:w-[840px] lg:w-[650px] md:w-[500px] w-[380px] z-10 shadow-lg 2xl:block xl:block lg:block md:block hidden  overflow-hidden px-16 py-10">
+                        <h2 class="text-3xl 2xl:text-[50px] text-[#3D3D3D] font-bold PlayfairDisplay pb-5">
+                            Theatre In Education
+                        </h2>
+                        <div class="space-y-6">
+                            <!-- Feature Items -->
+                            <div class="flex items-start gap-3">
+                                <p class="text-[#9B9999] text-lg Outfit">Students learn best by doing. Taking a step
+                                    beyond academics, Podar Innovation Center introduces a Theatre in Education program
+                                    that integrates interactive theatre practices and drama activities to aid the
+                                    educational process. Our Theatre in Education program provides the perfect
+                                    opportunities for students to experience and perceive concepts, refine communication
+                                    skills, enhance performance, and boost self-confidence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Mobile view  -->
+                    <div
+                        class="space-y-5 bg-white p-4 rounded-[8px] z-10 shadow-lg mt-[-100px] m-3 2xl:hidden xl:hidden lg:hidden md:hidden block">
+                        <h2 class="text-3xl 2xl:text-5xl xl:text-5xl lg:text-5xl font-bold PlayfairDisplay pb-0">
+                            Theatre In Education
+                        </h2>
+                        <div class="space-y-0">
+                            <!-- Feature Items -->
+                            <div class="flex items-start gap-3">
+                                <p class="text-gray-400 Outfit">Students learn best by doing. Taking a step beyond
+                                    academics, Podar Innovation Center introduces a Theatre in Education program that
+                                    integrates interactive theatre practices and drama activities to aid the educational
+                                    process. Our Theatre in Education program provides the perfect opportunities for
+                                    students to experience and perceive concepts, refine communication skills, enhance
+                                    performance, and boost self-confidence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center relative">
+                    <!-- Left Content -->
+                    <div
+                        class="absolute bg-white right-[32%] p-8 rounded-[8px] xl:w-[950px] lg:w-[650px] md:w-[500px] w-[380px] z-10 shadow-lg 2xl:block xl:block lg:block md:block hidden overflow-hidden px-10 py-10">
+                        <h2 class="text-3xl 2xl:text-[50px] text-[#3D3D3D] font-bold PlayfairDisplay pb-5">
+                            Academic Guidance For Std IX & X
+                        </h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-3">
+                                <p class="text-[#9B9999] text-lg Outfit">
+                                    Std IX & X are the most crucial years in a student’s life. To ensure that students
+                                    are prepared <br> to ace all crucial tests and Board examinations, our teachers are
+                                    diligently trained to provide the <br> best academic guidance to all students.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Image -->
+                    <div class="relative md:h-[400px] h-[222px] rounded-2xl overflow-hidden margin-top md:col-start-2">
+                        <img src="./images/whychoose4.png" alt="Students raising hands in classroom"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <!-- Mobile view -->
+                    <div
+                        class="space-y-5 bg-white p-4 rounded-[8px] z-10 shadow-lg mt-[-100px] m-3 2xl:hidden xl:hidden lg:hidden md:hidden block">
+                        <h2 class="text-3xl 2xl:text-5xl xl:text-5xl lg:text-5xl font-bold PlayfairDisplay pb-0">
+                            Academic Guidance For Std IX & X
+                        </h2>
+                        <div class="space-y-0">
+                            <div class="flex items-start gap-3">
+                                <p class="text-gray-400 Outfit">
+                                    Std IX & X are the most crucial years in a student’s life. To ensure that students
+                                    are prepared to ace all crucial tests and Board examinations, our teachers are
+                                    diligently trained to provide the best academic guidance to all students.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" grid md:grid-cols-2 gap-8 items-center ">
+                    <!-- left Image -->
+                    <div class="relative md:h-[400px] h-[222px] rounded-2xl overflow-hidden margin-top">
+                        <img src="./images/whychoose5.png" alt="Various spices in silver spoons"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <!-- Right Content -->
+                    <div
+                        class="absolute bg-white left-[39%] p-8 rounded-[8px] xl:w-[840px] lg:w-[650px] md:w-[500px] w-[380px] z-10 shadow-lg 2xl:block xl:block lg:block md:block hidden  overflow-hidden px-16 py-10">
+                        <h2 class="text-3xl 2xl:text-[50px] text-[#3D3D3D] font-bold PlayfairDisplay pb-5">
+                            Beanstalk Olympiads
+                        </h2>
+                        <div class="space-y-6">
+                            <!-- Feature Items -->
+                            <div class="flex items-start gap-3">
+                                <p class="text-[#9B9999] text-lg Outfit">A benchmark test in English, Mathematics and
+                                    Science, Beanstalk Olympiad strives to measure students' strengths and work on
+                                    improvisation by taking the academic competition to a level of excellence. By
+                                    providing a competitive platform, we aim to enhance the student’s learning and
+                                    application skills as well as the teaching-learning process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Mobile view  -->
+                    <div
+                        class="space-y-5 bg-white p-4 rounded-[8px] z-10 shadow-lg mt-[-100px] m-3 2xl:hidden xl:hidden lg:hidden md:hidden block">
+                        <h2 class="text-3xl 2xl:text-5xl xl:text-5xl lg:text-5xl font-bold PlayfairDisplay pb-0">
+                            Beanstalk Olympiads
+                        </h2>
+                        <div class="space-y-0">
+                            <!-- Feature Items -->
+                            <div class="flex items-start gap-3">
+                                <p class="text-gray-400 Outfit">A benchmark test in English, Mathematics and Science,
+                                    Beanstalk Olympiad strives to measure students' strengths and work on improvisation
+                                    by taking the academic competition to a level of excellence. By providing a
+                                    competitive platform, we aim to enhance the student’s learning and application
+                                    skills as well as the teaching-learning process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center relative">
+                    <!-- Left Content -->
+                    <div
+                        class="absolute bg-white right-[39%] p-8 rounded-[8px] xl:w-[840px] lg:w-[650px] md:w-[500px] w-[380px] z-10 shadow-lg 2xl:block xl:block lg:block md:block hidden overflow-hidden px-16 py-10">
+                        <h2 class="text-3xl 2xl:text-[50px] text-[#3D3D3D] font-bold PlayfairDisplay pb-5">
+                            Integrated English
+                        </h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-3">
+                                <p class="text-[#9B9999] text-lg Outfit">
+                                    As an extension of academic and co-curricular work at Podar, our Integrated English
+                                    program moulds self-initiated learners to showcase independent thinking,
+                                    self-confidence, teamwork, and efficient communication skills by developing
+                                    21st-century skills of Critical Thinking, Communication, Collaboration and
+                                    Creativity through theme-based modules which introduce experiential and
+                                    project-based learning techniques as their.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Image -->
+                    <div class="relative md:h-[400px] h-[222px] rounded-2xl overflow-hidden margin-top md:col-start-2">
+                        <img src="./images/whychoose6.png" alt="Students raising hands in classroom"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <!-- Mobile view -->
+                    <div
+                        class="space-y-5 bg-white p-4 rounded-[8px] z-10 shadow-lg mt-[-100px] m-3 2xl:hidden xl:hidden lg:hidden md:hidden block">
+                        <h2 class="text-3xl 2xl:text-5xl xl:text-5xl lg:text-5xl font-bold PlayfairDisplay pb-0">
+                            Integrated English
+                        </h2>
+                        <div class="space-y-0">
+                            <div class="flex items-start gap-3">
+                                <p class="text-gray-400 Outfit">
+                                    As an extension of academic and co-curricular work at Podar, our Integrated English
+                                    program moulds self-initiated learners to showcase independent thinking,
+                                    self-confidence, teamwork, and efficient communication skills by developing
+                                    21st-century skills of Critical Thinking, Communication, Collaboration and
+                                    Creativity through theme-based modules which introduce experiential and
+                                    project-based learning techniques as their.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END WHY CHOOSE US CONTENT  -->
+
+    <!-- otherthings section start -->
+   
+    <!-- otherthings section end -->
+    <!-- <section class="otherthings py-56">
+        <div class="container ">
+
+        </div>
+    </section> -->
+
+    <section>
+        <div class="container mx-auto grid grid-cols-1 gap-4 px-4 py-20">
+            <div>
+                <div class="flex p-5 items-center justify-center">
+                    <div class="bg-white p-10 last-section  bg-cover bg-center rounded-xl">
+                        <h4 class="font-jost text-[22px] font-bold leading-[26px] text-[#1B7BE2] text-left p-2">
+                            Other things that we care at Podar
+                        </h4>
+                        <h2
+                            class="text-[#843D8D] font-inter text-[30px] font-bold leading-[36.31px] text-center p-2 mb-4">
+                            <span class="flex space-x-4">
+                                We Don’t Take Interviews &nbsp;&nbsp;&nbsp; We Don’t Take Donations
+                            </span>
+                        </h2>
+                        <h4 class="font-jost text-[22px] font-bold leading-[26px] text-[#1B7BE2] text-left p-2">
+                            Because we Believe that your child is our our responsibility
+                        </h4>
+                        <h2 class="text-[#843D8D] font-inter text-[30px] font-bold leading-[36.31px] text-left p-2">
+                            We Groom, we <span class="text-black">Nurture</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER SECTION  -->
+
+    <footer class="footer bg-[#0c54a0] text-white py-6 flex flex-col items-center relative">
+        <!-- Background Image -->
+        <div class="bg-img w-full h-full absolute top-[-19px] left-0 z-0 hidden md:block">
+            <img src="./images/footer-img/footer-bg.png" alt="Footer Background" class="w-full h-full ">
+        </div>
+        <!-- Background Image Responsive -->
+        <div class="bg-img w-full h-full absolute top-0 left-0 z-0 md:hidden block">
+            <img src="./images/footer-img/footer-bg-res.png" alt="Footer Background" class="w-full h-full">
+        </div>
+
+        <!-- Container -->
+
+        <div class="md:container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6 z-10 py-6">
+            <!-- Logo Section -->
+            <div class="flex flex-col items-center justify-center space-y-4 md:col-span-1 col-span-4">
+                <img src="./images/footer-img/footer-logo.png" alt="Podar Logo" class="w-32 md:w-40">
+                <!-- <p class="text-sm text-center md:text-left">Since 1927</p> -->
+            </div>
+
+            <!-- Quick Links 1 (on medium screens, it will be on the left) -->
+            <div class="space-y-4 md:col-span-1 col-span-2">
+                <h3 class="font-semibold text-lg md:text-xl">Quick Links</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="#" class="hover:underline">Why Podar</a></li>
+                    <li><a href="#" class="hover:underline">Download Brochure</a></li>
+                    <li><a href="#" class="hover:underline">Transport Policy</a></li>
+                    <li><a href="#" class="hover:underline">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links 2 (on medium screens, it will be on the right) -->
+            <div class="space-y-4 md:col-span-1 col-span-2">
+                <h3 class="font-semibold text-lg md:text-xl">Quick Links</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li><a href="#" class="hover:underline">Admissions</a></li>
+                    <li><a href="#" class="hover:underline">Locations</a></li>
+                    <li><a href="#" class="hover:underline">FAQs</a></li>
+                    <li><a href="#" class="hover:underline">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section (on medium screens, will take full width) -->
+            <div class="space-y-4 md:col-span-1 col-span-4">
+                <h3 class="font-semibold text-lg md:text-xl">Keep in Touch</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                        85, Podar Centre, Chamarbaug Post Office Lane, Dr. Ambedkar Road, Parel, Mumbai-400042,
+                        Maharashtra, India
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3"></i>
+                        Admissions@podar.org
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone mr-3"></i>
+                        <a href="tel:02243330000" class="hover:underline">022 43330000</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex md:space-x-6 space-x-2 mt-8 md:mt-0 z-10">
+            <a href="#"
+                class="bg-white text-black hover:text-blue-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="Facebook">
+                <i class="fab fa-facebook-f text-lg md:text-xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white text-black hover:text-pink-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="Instagram">
+                <i class="fab fa-instagram text-lg md:text-xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white text-black hover:text-blue-400 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="Twitter">
+                <i class="fab fa-twitter text-lg md:text-xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white text-black hover:text-red-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="YouTube">
+                <i class="fab fa-youtube text-lg md:text-xl"></i>
+            </a>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="flex mt-4 z-10">
+            <p class="text-sm text-center w-full p-2">Copyright 2022 | Privacy Policy | Terms & Conditions</p>
+        </div>
+
+    </footer>
+
+    <!-- END OF FOOTER  -->
+
+    <!-- LINK SCRIPT SRC  -->
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        padding: {
+                            DEFAULT: "1rem",
+                            sm: "2rem",
+                            lg: "4rem",
+                            xl: "5rem",
+                            "2xl": "6rem",
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['"Josefin Sans"', "sans-serif"],
+                        josefin: ['"Josefin Sans"', "sans-serif"],
+                        antonio: ['"Antonio Fischer"', "cursive"],
+                        italiana: ['"Italiana"', "serif"],
+                        jost: ['"Jost"', "serif"],
+                        inter: ['"Inter"', "serif"],
+                    },
+                    backgroundImage: {
+                        "gradient-border":
+                            "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1D71B8 100%)",
+                    },
+                },
+            },
+        };
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./CSS/blogs.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <!-- LINK SLICK CSS  -->
+    <link rel="stylesheet" href="./CSS/slick.css">
+    <!-- FONT AWESOME LINK  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT FAMILY LINK  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- SLIDER CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header
+        class='flex shadow-[0px_0px_16px_rgba(17,_17,_26,_0.1)] py-4 px-4 sm:px-6 bg-white font-sans min-h-[70px] tracking-wide relative z-50'>
+        <div class='flex flex-wrap items-center justify-between gap-4 w-full max-w-screen-xl mx-auto'>
+            <a href="./index.html" class="max-sm:hidden triangle-border">
+                <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+            </a>
+            <a href="./index.html" class="hidden max-sm:block triangle-border">
+                <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+            </a>
+
+            <div id="collapseMenu"
+                class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+                <button id="toggleClose"
+                    class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
+                        viewBox="0 0 320.591 320.591">
+                        <path
+                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                            data-original="#000000"></path>
+                        <path
+                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                            data-original="#000000"></path>
+                    </svg>
+                </button>
+
+                <ul
+                    class='lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+                    <li class='mb-6 hidden max-lg:block'>
+                        <a href="" class="triangle-border"><img
+                                src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+                        </a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'>
+                        <a href='./index.html'
+                            class='hover:text-[#843d8d] text-[#843d8d] font-bold block text-base'>Home</a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./aboutUs.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>About us</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./why-choose-us.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Why Choose Us</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./Admmision.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Admissions</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./blogs.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Blogs</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./contact.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Contact Us</a></li>
+                    <!-- Enquire Button -->
+                    <li class='mt-4 lg:hidden'>
+                        <button type="button"
+                            class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2 w-full">
+                            Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class='flex items-center max-lg:ml-auto space-x-4'>
+                <button type="button"
+                    class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2 lg:block hidden">
+                    Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <button id="toggleOpen" class='lg:hidden'>
+                    <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+     <!-- HERO SECTION -->
+     <section class="bg-baner-index">
+        <div class="container flex items-center h-full">
+            <div>
+                <div>
+                    <h1
+                        class="font-inter text-[30px] md:text-[50px] lg:text-[70px] font-bold leading-[80px] tracking-[-0.01em] text-white break-words relative">
+                        Blogs
+                        <img src="./images/Group.png" alt="flower"
+                            class="w-[24px] h-[24px] object-contain mx-3 absolute top-[25px] left-[80px] md:left-[130px] lg:left-[200px]">
+                    </h1>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HERO SECTION  -->
+
+    <!-- Blog Details Section -->
+    <section class="container max-w-7xl mx-auto py-10 px-4 pb-20">
+        <div>
+            <div class="grid 2xl:grid-cols-3 xl:grid-cols-3 grid-cols-1 2xl:gap-8 xl:gap-8 lg:gap-8 md:gap-0 gap-3">
+                <!-- Main Content -->
+                <div class="xl:col-span-2 order-1 xl:order-1">
+                    <!-- Featured Image -->
+                    <div class="rounded-lg  mb-4 relative">
+
+                        <img src="images/download1.png" alt="" class="absolute  md:h-[100%] h-[100%] w-full">
+
+                        <img src="/images/download1.png" alt="Black pepper powder in silver bowl"
+                            class="w-full md:h-[100%] h-[100%] object-cover p-2" />
+                    </div>
+
+                    <!-- Article Content -->
+                    <p
+                        class="text-[#3D3D3D] 2xl:text-[44px] xl:text-[44px] lg:text-[44px] md:text-[44px] text-[30px] font-bold pt-4 PlayfairDisplay">
+                        Principal’s Blog 18 August 2023</p>
+
+                    <div class="space-y-2 text-[#a7a5a5] pt-2 md:text-[20px] text-[17px]">
+                        <p>
+                            In today's world, where environmental consciousness is more critical than ever, teaching
+                            kids
+                            about sustainability practices is essential to their education. At Podar International
+                            School,
+                            we believe in creating a holistic environment that instils in children a deep appreciation
+                            for
+                            the environment and the importance of responsible choices. A very important lesson that we
+                            can
+                            impart is the significance of saving paper. Let’s explore ten creative ways to teach kids
+                            about
+                            the need to conserve paper, all while emphasising how Podar's educational approach fosters a
+                            sense of environmental responsibility.
+                        </p>
+                    </div>
+
+                    <p class="text-[#3D3D3D] text-[23px] font-bold pt-4 PlayfairDisplay">
+                        Lead by Example</p>
+                    <!-- mobile and desktop  -->
+                    <div class="text-[#a7a5a5] pt-2 md:text-[20px] text-[17px] block">
+                        <p>
+                            The best way to teach kids is by setting a positive example. Show them how to save paper by
+                            using both sides of a sheet, recycling, and reducing unnecessary printing.
+                        </p>
+                    </div>
+                </div>
+                <!-- Sidebar -->
+                <div class="lg:col-span-1 md:p-2 order-3 xl:order-2">
+                    <!-- Search Bar -->
+                    <div class="flex gap-2 mb-6">
+                        <div class="flex w-full relative">
+                            <input type="text" placeholder="Search Your Keyword.."
+                                class="w-full pl-5 py-4 border border-1 border-[#5f5f5f] rounded-[6px] focus:outline-none">
+                            <div
+                                class="bg-[#0c54a0] px-5 rounded-r-[6px] absolute py-[17px] right-0 overflow-hidden cursor-pointer">
+                                <i class="fa-solid fa-magnifying-glass text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-1 border-gray-500 rounded p-4 mb-6">
+                        <h1 class="text-xl">Categories</h1>
+                        <p class="text-gray-500 text-lg pt-4">Educations </p>
+                        <div class="border-t border-gray-300 my-1"></div>
+                        <p class="text-gray-500 text-lg pt-2">Childs </p>
+                        <div class="border-t border-gray-300 my-1"></div>
+                        <p class="text-gray-500 text-lg pt-2">Design </p>
+                        <div class="border-t border-gray-300 my-1"></div>
+                        <p class="text-gray-500 text-lg pt-2">Teachers </p>
+                        <div class="border-t border-gray-300 my-1"></div>
+                        <p class="text-gray-500 text-lg pt-2">Life Styles </p>
+                    </div>
+                    <div class="border border-1 border-gray-500 rounded p-4 mb-6">
+                        <h1 class="text-xl">Archives</h1>
+                        <p class="text-gray-500 text-lg pt-4">May 2020 </p>
+                        <div class="border-t border-gray-300 my-1"></div>
+                        <p class="text-gray-500 text-lg pt-2">February 2019 </p>
+                        <div class="border-t border-gray-300 my-1"></div>
+                        <p class="text-gray-500 text-lg pt-2">August 2018 </p>
+                    </div>
+                    <!-- Recent Classes -->
+                    <div
+                        class="border border-[0.5px] border-gray-400 rounded-[9px] 2xl:px-10 2xl:py-8 xl:px-5 xl:pb-10 xl:pt-9 lg:px-8 lg:pb-12 lg:pt-9 md:px-8 md:pb-12 md:pt-9 px-[10px] pb-7 pt-7">
+                        <h2 class="text-gray-800 text-xl font-semibold mb-4">Recants Classes</h2>
+
+                        <!-- Recent Post Items -->
+                        <div class="pt-2">
+                            <!-- Post 1 -->
+                            <div class="flex gap-4 pb-4">
+                                <img src="images/image1.png" alt="Recent post thumbnail"
+                                    class="w-20 h-20 object-cover" />
+                                <div>
+                                    <p class=" text-xs Outfit">English Classroom</p>
+                                    <h3 class="text-gray-500 md:text-[17px] text-[16px] pt-4 Outfit">
+                                        Lorem ipsum dolor sit cing elit, sed do.
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="border-t border-gray-300"></div>
+
+                            <!-- Post 2 -->
+                            <div class="flex gap-4 pt-4">
+                                <img src="/images/image.png" alt="Recent post thumbnail"
+                                    class="w-20 h-20 object-cover" />
+                                <div>
+                                    <p class=" text-xs Outfit">English Classroom</p>
+                                    <h3 class="text-gray-500 md:text-[17px] text-[16px] pt-4 Outfit">
+                                        Lorem ipsum dolor sit cing elit, sed do.
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- other text -->
+                <div class="xl:col-span-3 order-2 xl:order-3">
+                    <p class="text-[#3D3D3D] text-[23px] font-bold pt-4 PlayfairDisplay block">
+                        Storytelling</p>
+                    <!-- mobile and desktop  -->
+                    <div class="text-[#a7a5a5] pt-2 md:text-[20px] text-[17px] block">
+                        <p>
+                            Engage children with stories highlighting paper's journey from trees to final products. It
+                            helps
+                            them understand the value of trees and the paper-making process.
+                        </p>
+                    </div>
+                    <p class="text-[#3D3D3D] text-[23px] font-bold pt-4 PlayfairDisplay block">
+                        Art and Craft Projects</p>
+                    <!-- mobile and desktop  -->
+                    <div class="text-[#a7a5a5] pt-2 md:text-[20px] text-[17px] block">
+                        <p>
+                            Encourage kids to express their creativity through art projects that use recycled paper or
+                            materials. This way, they learn to see the potential in reusing resources.
+                        </p>
+                    </div>
+                    <p class="text-[#3D3D3D] text-[23px] font-bold pt-4 PlayfairDisplay block">
+                        DIY Stationery</p>
+                    <!-- mobile and desktop  -->
+                    <div class="text-[#a7a5a5] pt-2 md:text-[20px] text-[17px] block">
+                        <p>
+                            Use old paper to create homemade stationery items like notebooks, bookmarks, or greeting
+                            cards.
+                            It's
+                            both fun and eco-friendly.
+                        </p>
+                    </div>
+                    <p class="text-[#3D3D3D] text-[23px] font-bold pt-4 PlayfairDisplay block">
+                        Nature Walks</p>
+                    <!-- mobile and desktop  -->
+                    <div class="text-[#a7a5a5] pt-2 md:text-[20px] text-[17px] block">
+                        <p>
+                            Organise nature walks to observe the beauty of trees and their connection to paper
+                            production.
+                            Teach
+                            kids the importance of conserving forests.
+                        </p>
+                    </div>
+                    <p class="text-[#3D3D3D] text-[23px] font-bold pt-4 PlayfairDisplay block">
+                        Gardening</p>
+                    <!-- mobile and desktop  -->
+                    <div class="text-[#a7a5a5] pt-2 md:text-[20px] text-[17px] block">
+                        <p>
+                            Involve children in gardening activities where they can learn about trees, plants, and the
+                            role
+                            of
+                            trees in maintaining a balanced ecosystem.
+                        </p>
+                    </div>
+                    <p class="text-[#3D3D3D] text-[23px] font-bold pt-4 PlayfairDisplay block">
+                        Digital Alternatives</p>
+                    <!-- mobile and desktop  -->
+                    <div class="text-[#a7a5a5] pt-2 md:text-[20px] text-[17px] block">
+                        <p>
+                            Show kids how digital tools can be used for note-taking and assignments, reducing the need
+                            for
+                            printed materials.
+                        </p>
+                    </div>
+                    <p class="text-[#3D3D3D] text-[23px] font-bold pt-4 PlayfairDisplay block">
+                        Reduce Food Waste</p>
+                    <!-- mobile and desktop  -->
+                    <div class="text-[#a7a5a5] pt-2 md:text-[20px] text-[17px] block">
+                        <p>
+                            Explain how using paper unnecessarily for packaging contributes to waste. Teach them to make
+                            eco-friendly choices when it comes to packaging and disposal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- End Blog Details Section -->
+
+    <section>
+        <div class="container mx-auto grid grid-cols-1 gap-4 px-4 py-20">
+            <div>
+                <div class="flex p-5 items-center justify-center">
+                    <div class="bg-white p-10 last-section  bg-cover bg-center rounded-xl">
+                        <h4 class="font-jost text-[22px] font-bold leading-[26px] text-[#1B7BE2] text-left p-2">
+                            Other things that we care at Podar
+                        </h4>
+                        <h2
+                            class="text-[#843D8D] font-inter text-[30px] font-bold leading-[36.31px] text-center p-2 mb-4">
+                            <span class="flex space-x-4">
+                                We Don’t Take Interviews &nbsp;&nbsp;&nbsp; We Don’t Take Donations
+                            </span>
+                        </h2>
+                        <h4 class="font-jost text-[22px] font-bold leading-[26px] text-[#1B7BE2] text-left p-2">
+                            Because we Believe that your child is our our responsibility
+                        </h4>
+                        <h2 class="text-[#843D8D] font-inter text-[30px] font-bold leading-[36.31px] text-left p-2">
+                            We Groom, we <span class="text-black">Nurture</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-[#0c54a0] text-white py-6 flex flex-col items-center relative">
+        <!-- Background Image -->
+        <div class="bg-img w-full h-full absolute top-[-19px] left-0 z-0 hidden md:block">
+            <img src="./images/footer-img/footer-bg.png" alt="Footer Background" class="w-full h-full ">
+        </div>
+        <!-- Background Image Responsive -->
+        <div class="bg-img w-full h-full absolute top-0 left-0 z-0 md:hidden block">
+            <img src="./images/footer-img/footer-bg-res.png" alt="Footer Background" class="w-full h-full">
+        </div>
+
+        <!-- Container -->
+
+        <div class="md:container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6 z-10 py-6">
+            <!-- Logo Section -->
+            <div class="flex flex-col items-center justify-center space-y-4 md:col-span-1 col-span-4">
+                <img src="./images/footer-img/footer-logo.png" alt="Podar Logo" class="w-32 md:w-40">
+                <!-- <p class="text-sm text-center md:text-left">Since 1927</p> -->
+            </div>
+
+            <!-- Quick Links 1 (on medium screens, it will be on the left) -->
+            <div class="space-y-4 md:col-span-1 col-span-2">
+                <h3 class="font-semibold text-lg md:text-xl">Quick Links</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="#" class="hover:underline">Why Podar</a></li>
+                    <li><a href="#" class="hover:underline">Download Brochure</a></li>
+                    <li><a href="#" class="hover:underline">Transport Policy</a></li>
+                    <li><a href="#" class="hover:underline">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links 2 (on medium screens, it will be on the right) -->
+            <div class="space-y-4 md:col-span-1 col-span-2">
+                <h3 class="font-semibold text-lg md:text-xl">Quick Links</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li><a href="#" class="hover:underline">Admissions</a></li>
+                    <li><a href="#" class="hover:underline">Locations</a></li>
+                    <li><a href="#" class="hover:underline">FAQs</a></li>
+                    <li><a href="#" class="hover:underline">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section (on medium screens, will take full width) -->
+            <div class="space-y-4 md:col-span-1 col-span-4">
+                <h3 class="font-semibold text-lg md:text-xl">Keep in Touch</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                        85, Podar Centre, Chamarbaug Post Office Lane, Dr. Ambedkar Road, Parel, Mumbai-400042,
+                        Maharashtra, India
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3"></i>
+                        Admissions@podar.org
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone mr-3"></i>
+                        <a href="tel:02243330000" class="hover:underline">022 43330000</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex md:space-x-6 space-x-2 mt-8 md:mt-0 z-10">
+            <a href="#"
+                class="bg-white text-black hover:text-blue-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="Facebook">
+                <i class="fab fa-facebook-f text-lg md:text-xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white text-black hover:text-pink-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="Instagram">
+                <i class="fab fa-instagram text-lg md:text-xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white text-black hover:text-blue-400 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="Twitter">
+                <i class="fab fa-twitter text-lg md:text-xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white text-black hover:text-red-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="YouTube">
+                <i class="fab fa-youtube text-lg md:text-xl"></i>
+            </a>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="flex mt-4 z-10">
+            <p class="text-sm text-center w-full p-2">Copyright 2022 | Privacy Policy | Terms & Conditions</p>
+        </div>
+
+    </footer>
+
+    <!-- LINK SCRIPT SRC  -->
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        padding: {
+                            DEFAULT: "1rem",
+                            sm: "2rem",
+                            lg: "4rem",
+                            xl: "5rem",
+                            "2xl": "6rem",
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['"Josefin Sans"', "sans-serif"],
+                        josefin: ['"Josefin Sans"', "sans-serif"],
+                        antonio: ['"Antonio Fischer"', "cursive"],
+                        italiana: ['"Italiana"', "serif"],
+                    },
+                    backgroundImage: {
+                        "gradient-border":
+                            "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1D71B8 100%)",
+                    },
+                },
+            },
+        };
+    </script>
+
+</body>
+
+</html>
